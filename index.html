@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Indy Chocolate Shop - Free Sample Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <p class="eyebrow">Welcome to our chocolate shop</p>
+      <h1>Pick a Chocolate!</h1>
+      <p>Explore our chocolates while you wait, then try your luck at a free sample.</p>
+    </div>
+  </header>
+
+  <main>
+    <section class="game-controls" aria-label="Chocolate game controls">
+      <h2>Find your free sample</h2>
+      <p>Click the button to pick a random chocolate. The selected card will turn yellow!</p>
+      <div class="button-row">
+        <button id="sampleBtn" type="button">Pick Random Free Sample</button>
+        <button id="detailsBtn" class="secondary-btn" type="button" aria-expanded="false">
+          Show Calories and Content
+        </button>
+      </div>
+      <p id="resultMessage" aria-live="polite">Your chocolate selection will appear here.</p>
+    </section>
+
+    <section class="chocolate-section" aria-labelledby="chocolatesHeading">
+      <div class="section-heading">
+        <h2 id="chocolatesHeading">Our 10 Chocolates</h2>
+        <p>Which one would you try?</p>
+      </div>
+      <div id="chocolateCards" class="chocolate-grid"></div>
+    </section>
+  </main>
+
+  <footer>Show your generated code to the cashier to claim your free sample.</footer>
+
+ 
+  <script src="jquery.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
